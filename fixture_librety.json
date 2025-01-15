@@ -1,0 +1,29 @@
+[
+{
+    "model": "library.book",
+    "pk": 2,
+    "fields": {
+        "title": "book2",
+        "publication_date": "1890-12-22",
+        "author": 2
+    }
+},
+{
+    "model": "library.author",
+    "pk": 1,
+    "fields": {
+        "first_name": "Ivan",
+        "last_name": "Ivanov",
+        "birth_date": "1830-10-23"
+    }
+},
+{
+    "model": "library.author",
+    "pk": 2,
+    "fields": {
+        "first_name": "Petr",
+        "last_name": "Petrov",
+        "birth_date": "1937-12-18"
+    }
+}
+]
