@@ -1,5 +1,3 @@
-from msilib.schema import ListView
-
 from django.http import HttpResponse
 from django.shortcuts import render
 from students.models import MyModel
