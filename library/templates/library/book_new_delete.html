@@ -1,0 +1,16 @@
+{% extends 'library/base.html' %}
+
+{% block title %}Детали книги{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mb-4">Удалить {{ book.title }}</h1>
+    <p>Вы уверены, что хотите удалить {{ book.title }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-danger">Удалить</button>
+        <a href="{% url 'library:book_new_list' %}">Отмена</a>
+    </form>
+</div>
+{% endblock %}

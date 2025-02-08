@@ -9,4 +9,8 @@ urlpatterns = [
 
     path('mymodel/create/', views.MyModelCreateView.as_view(), name='mymodel_create'),
     path('mymodel/list/', views.MyModelListView.as_view(), name='mymodel_list'),
+    path('mymodel/detail/<int:pk>/', views.MyModelDetailView.as_view(), name='mymodel_detail'),
+    path('mymodel/update/<int:pk>/', views.MyModelUpdateView.as_view(), name='mymodel_update'),
+    path('mymodel/delete/<int:pk>/', views.MyModelDeleteView.as_view(), name='mymodel_delete'),
+    path('student/create/', views.StudentCreateView.as_view(), name='student_create'),
 ]

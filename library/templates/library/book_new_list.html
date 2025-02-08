@@ -1,0 +1,20 @@
+{% extends 'library/base.html' %}
+
+{% block title %}Список книг{% endblock %}
+
+{% block content %}
+{% include 'library/header.html' %}
+<div class="container">
+    <h1 class="mb-4">Список книг</h1>
+    <a href="{% url 'library:book_new_create' %}" class="btn btn-primary">Создать новую книгу</a>
+    <ul class="list_group mt-4">
+        {% for book in books %}
+        <li class="list-group-item mt-2">
+            <a href="{% url 'library:book_new_detail' pk=book.pk %}">{{ book.title }}</a>
+            <a href="{% url 'library:book_new_update' pk=book.pk %}" class="btn btn-secondary">Редактировать</a>
+            <a href="{% url 'library:book_new_delete' pk=book.pk %}" class="btn btn-danger">Удалить</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

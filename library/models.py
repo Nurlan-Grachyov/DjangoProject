@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Author(models.Model):
     first_name = models.CharField(max_length=150, verbose_name='Имя')
     last_name = models.CharField(max_length=150, verbose_name="Фамилия")

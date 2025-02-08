@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Библиотека</a>
+            <a class="navbar-brand">Библиотека</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
                         <a class="nav-link" href="#">Авторы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Книги</a>
+                        <a class="nav-link" href="{% url 'library:book_new_list' %}">Книги</a>
                     </li>
                 </ul>
             </div>
