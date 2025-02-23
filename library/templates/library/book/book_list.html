@@ -10,7 +10,7 @@
     <ul class="list_group mt-4">
         {% for book in books %}
         <li class="list-group-item mt-2">
-            <a href="{% url 'library:book_new_detail' pk=book.pk %}">{{ book.title }}</a>
+            <a href="{% url 'library:book_new_detail' pk=book.pk %}">{{book.title}}</a>
             <a href="{% url 'library:book_new_update' pk=book.pk %}" class="btn btn-secondary">Редактировать</a>
             <a href="{% url 'library:book_new_delete' pk=book.pk %}" class="btn btn-danger">Удалить</a>
         </li>
